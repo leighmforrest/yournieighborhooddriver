@@ -1,0 +1,63 @@
+html, body {
+  background: #FFF1A4;
+  color: #000;
+  height: 100%;
+  font-family: 'Poppins', sans-serif; }
+
+.navbar {
+  font-family: 'Carter One', cursive;
+  background-color: green; }
+  .navbar > .navbar-brand {
+    color: yellow; }
+  .navbar .navbar-nav .nav-item .active > .nav-link a {
+    color: blue; }
+  .navbar .navbar-nav .nav-item > a {
+    color: yellow; }
+  .navbar .navbar-nav .nav-item > a:hover {
+    color: #FFF1A4; }
+
+.hero {
+  margin-bottom: 10px; }
+  .hero img {
+    width: 100%;
+    height: auto; }
+
+.container {
+  width: 100%; }
+
+.card {
+  margin: 15px 0 15px 0; }
+  .card .list-group > li {
+    text-align: center; }
+
+.referrals {
+  margin: 10px auto; }
+
+/* widget superclass */
+.referral {
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 15%;
+  padding-top: 15%;
+  min-width: 210px; }
+
+/* .referral is an implementation of widget */
+.referral > .fab {
+  display: block;
+  font-size: 10rem; }
+.referral > .uzurv {
+  display: block;
+  text-align: center;
+  font-size: 3rem; }
+
+/* Breakpoint: 700 */
+@media only screen and (min-width: 765px) {
+  .hero img {
+    display: block;
+    width: 95%;
+    margin: 0 auto 5px auto; } }
+
+/*# sourceMappingURL=style.css.map */

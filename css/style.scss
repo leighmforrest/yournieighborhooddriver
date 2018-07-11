@@ -1,0 +1,99 @@
+$NAV_BACKGROUND : green;
+$BACKGROUND: #FFF1A4;
+$COLOR: #000;
+$NAV_TEXT : yellow;
+
+html, body {
+    background: $BACKGROUND;
+    color: $COLOR;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    font-family: 'Carter One', cursive;
+    background-color: $NAV_BACKGROUND;
+
+    > .navbar-brand {
+        color: $NAV_TEXT;
+    }
+
+    .navbar-nav .nav-item {
+        .active>.nav-link a {
+            color: blue;
+        }
+
+        >a {
+            color: $NAV_TEXT;
+            }
+        >a:hover {
+            color: $BACKGROUND;
+        }
+
+    }
+
+}
+
+.hero {
+    margin-bottom: 10px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+.card {
+    margin: 15px 0 15px 0;
+
+    .list-group > li {
+        text-align: center;
+    }
+}
+
+.referrals {
+    margin: 10px auto;
+}
+
+/* widget superclass */
+%widget {
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    min-width: 210px;
+}
+
+/* .referral is an implementation of widget */
+.referral {
+    @extend %widget;
+
+    > .fab {
+        display: block;
+        font-size: 10rem;
+    }
+
+    > .uzurv {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+
+/* Breakpoint: 700 */
+@media only screen and (min-width: 765px) {
+    .hero img {
+        display: block;
+        width: 95%;
+        margin: 0 auto 5px auto;
+    }
+}
+
