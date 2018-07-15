@@ -1,20 +1,18 @@
-html, body {
-  background: #FFF1A4;
-  color: #000;
-  height: 100%;
+html {
+  height: 100%; }
+
+body {
+  background: rgba(255, 255, 0, 0.33);
+  color: #374B40;
   font-family: 'Poppins', sans-serif; }
 
 .navbar {
   font-family: 'Carter One', cursive;
-  background-color: green; }
+  background-color: #009B00; }
   .navbar > .navbar-brand {
-    color: yellow; }
-  .navbar .navbar-nav .nav-item .active > .nav-link a {
-    color: blue; }
-  .navbar .navbar-nav .nav-item > a {
-    color: yellow; }
-  .navbar .navbar-nav .nav-item > a:hover {
-    color: #FFF1A4; }
+    color: #FFFF00; }
+  .navbar .navbar-nav a:hover {
+    color: #009B00; }
 
 .hero {
   margin-bottom: 10px; }
@@ -26,32 +24,46 @@ html, body {
   width: 100%; }
 
 .card {
-  margin: 15px 0 15px 0; }
+  margin: 15px 0 15px 0;
+  color: #374B40; }
   .card .list-group > li {
     text-align: center; }
 
 .referrals {
   margin: 10px auto; }
 
+.table.table-bordered > thead > tr > td {
+  border: 1px solid #374B40; }
+.table.table-bordered > tbody > tr > td {
+  border: 1px solid #374B40; }
+
 /* widget superclass */
-.referral {
+.referral, .ad {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #374B40;
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 10px;
   padding-bottom: 15%;
-  padding-top: 15%;
-  min-width: 210px; }
+  padding-top: 15%; }
+  .referral a:link, .ad a:link, .referral a:hover, .ad a:hover, .referral a:visited, .ad a:visited, .referral a:active, .ad a:active {
+    text-decoration: none;
+    color: #374B40; }
 
 /* .referral is an implementation of widget */
-.referral > .fab {
-  display: block;
-  font-size: 10rem; }
-.referral > .uzurv {
-  display: block;
-  text-align: center;
-  font-size: 3rem; }
+.referral {
+  min-width: 200px; }
+  .referral > a > .fab {
+    display: block;
+    font-size: 10rem; }
+  .referral > a > .uzurv {
+    display: block;
+    text-align: center;
+    font-size: 3rem; }
+
+/* .ad is an implementation of widget. It is a wrapper inside of a col. */
+.ad {
+  min-height: 200px; }
 
 /* Breakpoint: 700 */
 @media only screen and (min-width: 765px) {

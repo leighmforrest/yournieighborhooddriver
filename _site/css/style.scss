@@ -1,12 +1,16 @@
-$NAV_BACKGROUND : green;
-$BACKGROUND: #FFF1A4;
-$COLOR: #000;
-$NAV_TEXT : yellow;
+$NAV_BACKGROUND: #009B00;
+$BACKGROUND: rgba(255, 255, 0, .33);
+$COLOR: #374B40;
+$NAV_TEXT: #FFFF00;
+$TABLE_BORDER: 1px solid $COLOR;
 
-html, body {
+html {
+    height: 100%;
+}
+
+body {
     background: $BACKGROUND;
     color: $COLOR;
-    height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,20 +22,11 @@ html, body {
         color: $NAV_TEXT;
     }
 
-    .navbar-nav .nav-item {
-        .active>.nav-link a {
-            color: blue;
+    .navbar-nav {
+        a:hover {
+        color: $NAV_BACKGROUND;
         }
-
-        >a {
-            color: $NAV_TEXT;
-            }
-        >a:hover {
-            color: $BACKGROUND;
-        }
-
     }
-
 }
 
 .hero {
@@ -49,6 +44,7 @@ html, body {
 
 .card {
     margin: 15px 0 15px 0;
+    color: $COLOR;
 
     .list-group > li {
         text-align: center;
@@ -59,32 +55,54 @@ html, body {
     margin: 10px auto;
 }
 
+.table.table-bordered {
+    >thead>tr>td {
+        border: $TABLE_BORDER;
+    }
+    >tbody>tr>td {
+        border: $TABLE_BORDER;
+    }
+}
+
+
 /* widget superclass */
 %widget {
+
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid $COLOR;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 15%;
     padding-top: 15%;
-    min-width: 210px;
+
+    a:link, a:hover, a:visited, a:active {
+        text-decoration: none;
+        color: $COLOR;
+    }
 }
 
 /* .referral is an implementation of widget */
 .referral {
     @extend %widget;
+    min-width: 200px;
 
-    > .fab {
+    >a> .fab {
         display: block;
         font-size: 10rem;
     }
 
-    > .uzurv {
+    >a >.uzurv {
         display: block;
         text-align: center;
         font-size: 3rem;
     }
+}
+
+/* .ad is an implementation of widget. It is a wrapper inside of a col. */
+.ad {
+    @extend %widget;
+    min-height: 200px;
 }
 
 
