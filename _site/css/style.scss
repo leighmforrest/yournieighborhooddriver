@@ -1,5 +1,5 @@
 $NAV_BACKGROUND: #009B00;
-$BACKGROUND: rgba(255, 255, 0, .33);
+$BACKGROUND: rgba(255, 255, 0 , .24);
 $COLOR: #374B40;
 $NAV_TEXT: #FFFF00;
 $TABLE_BORDER: 1px solid $COLOR;
@@ -61,6 +61,19 @@ body {
     }
     >tbody>tr>td {
         border: $TABLE_BORDER;
+    }
+}
+
+footer {
+    background-color: $NAV_BACKGROUND;
+    margin-top:10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 10px solid $NAV_TEXT;
+
+    .copyright {
+        color: $NAV_TEXT;
+        font-size: 1.25rem;
     }
 }
 
