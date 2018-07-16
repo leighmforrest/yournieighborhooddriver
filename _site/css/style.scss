@@ -4,16 +4,16 @@ $COLOR: #374B40;
 $NAV_TEXT: #FFFF00;
 $TABLE_BORDER: 1px solid $COLOR;
 
+/* GLOBAL STYLES */
 html {
     height: 100%;
 }
-
 body {
     background: $BACKGROUND;
     color: $COLOR;
     font-family: 'Poppins', sans-serif;
 }
-
+/* NAVBAR STYLES */
 .navbar {
     font-family: 'Carter One', cursive;
     background-color: $NAV_BACKGROUND;
@@ -28,7 +28,7 @@ body {
         }
     }
 }
-
+/* HERO STYLES */
 .hero {
     margin-bottom: 10px;
 
@@ -37,11 +37,10 @@ body {
         height: auto;
     }
 }
-
+/* MAIN CONTENT STYLES */
 .container {
     width: 100%;
 }
-
 .card {
     margin: 15px 0 15px 0;
     color: $COLOR;
@@ -50,11 +49,6 @@ body {
         text-align: center;
     }
 }
-
-.referrals {
-    margin: 10px auto;
-}
-
 .table.table-bordered {
     >thead>tr>td {
         border: $TABLE_BORDER;
@@ -63,7 +57,7 @@ body {
         border: $TABLE_BORDER;
     }
 }
-
+/* FOOTER STYLES */
 footer {
     background-color: $NAV_BACKGROUND;
     margin-top:10px;
@@ -78,7 +72,7 @@ footer {
 }
 
 
-/* widget superclass */
+/* WIDGET SUPERCLASS */
 %widget {
 
     border-radius: 5px;
@@ -94,8 +88,10 @@ footer {
         color: $COLOR;
     }
 }
-
-/* .referral is an implementation of widget */
+/* REFERRALS AND REFERRAL STYLES */
+.referrals {
+    margin: 10px auto;
+}
 .referral {
     @extend %widget;
     min-width: 200px;
@@ -111,8 +107,7 @@ footer {
         font-size: 3rem;
     }
 }
-
-/* .ad is an implementation of widget. It is a wrapper inside of a col. */
+/* AD STYLES */
 .ad {
     @extend %widget;
     min-height: 200px;
