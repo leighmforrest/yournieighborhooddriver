@@ -42,7 +42,7 @@ body {
     width: 100%;
 }
 .card {
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
     color: $COLOR;
 
     .list-group > li {
@@ -55,6 +55,29 @@ body {
     }
     >tbody>tr>td {
         border: $TABLE_BORDER;
+    }
+}
+.content {
+    margin: 10px auto;
+}
+.social {
+    margin-top: 10px;
+    >img {
+        display: block;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border: 15px solid $NAV_BACKGROUND;
+    }
+    a:link, a:hover, a:visited,a:active {
+        text-decoration: none;
+    }
+    .fab, .far {
+        font-size: 1.6rem;
+        padding: 15px;
+        color: $NAV_TEXT;
+        background-color: $NAV_BACKGROUND;
     }
 }
 /* FOOTER STYLES */
@@ -70,8 +93,6 @@ footer {
         font-size: 1.25rem;
     }
 }
-
-
 /* WIDGET SUPERCLASS */
 %widget {
 
@@ -112,8 +133,6 @@ footer {
     @extend %widget;
     min-height: 200px;
 }
-
-
 /* Breakpoint: 700 */
 @media only screen and (min-width: 765px) {
     .hero img {
@@ -122,4 +141,3 @@ footer {
         margin: 0 auto 5px auto;
     }
 }
-

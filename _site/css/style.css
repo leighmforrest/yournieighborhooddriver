@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 html {
   height: 100%; }
 
@@ -6,6 +7,7 @@ body {
   color: #374B40;
   font-family: 'Poppins', sans-serif; }
 
+/* NAVBAR STYLES */
 .navbar {
   font-family: 'Carter One', cursive;
   background-color: #009B00; }
@@ -14,29 +16,49 @@ body {
   .navbar .navbar-nav a:hover {
     color: #009B00; }
 
+/* HERO STYLES */
 .hero {
   margin-bottom: 10px; }
   .hero img {
     width: 100%;
     height: auto; }
 
+/* MAIN CONTENT STYLES */
 .container {
   width: 100%; }
 
 .card {
-  margin: 15px 0 15px 0;
+  margin: 15px 0;
   color: #374B40; }
   .card .list-group > li {
     text-align: center; }
-
-.referrals {
-  margin: 10px auto; }
 
 .table.table-bordered > thead > tr > td {
   border: 1px solid #374B40; }
 .table.table-bordered > tbody > tr > td {
   border: 1px solid #374B40; }
 
+.content {
+  margin: 10px auto; }
+
+.social {
+  margin-top: 10px; }
+  .social > img {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 15px solid #009B00; }
+  .social a:link, .social a:hover, .social a:visited, .social a:active {
+    text-decoration: none; }
+  .social .fab, .social .far {
+    font-size: 1.6rem;
+    padding: 15px;
+    color: #FFFF00;
+    background-color: #009B00; }
+
+/* FOOTER STYLES */
 footer {
   background-color: #009B00;
   margin-top: 10px;
@@ -47,7 +69,7 @@ footer {
     color: #FFFF00;
     font-size: 1.25rem; }
 
-/* widget superclass */
+/* WIDGET SUPERCLASS */
 .referral, .ad {
   border-radius: 5px;
   border: 1px solid #374B40;
@@ -60,7 +82,10 @@ footer {
     text-decoration: none;
     color: #374B40; }
 
-/* .referral is an implementation of widget */
+/* REFERRALS AND REFERRAL STYLES */
+.referrals {
+  margin: 10px auto; }
+
 .referral {
   min-width: 200px; }
   .referral > a > .fab {
@@ -71,7 +96,7 @@ footer {
     text-align: center;
     font-size: 3rem; }
 
-/* .ad is an implementation of widget. It is a wrapper inside of a col. */
+/* AD STYLES */
 .ad {
   min-height: 200px; }
 
