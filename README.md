@@ -13,6 +13,10 @@ This project is about a Philadelphia-based rideshare brand, operating under the 
     his/her rideshare business.
 1. connect.html: Page containing social media links and widgets.
 
+## Folders of Note
+1. css: Contains a css file for rendering, a scss file containing the styles in scss format, and a css.map file.
+1. img: contains images for the website.
+
 ## Notes
 
 The folders **ride**, **drive**, and **uzurv** each contain an **index.html** file. These folders allow clean urls (e.g. /ride, /drive, and /uzurv) for referral redirects. _config.yml contains a Ruby gem that allows github Pages to redirect. Learn more [here](https://help.github.com/articles/redirects-on-github-pages/).
