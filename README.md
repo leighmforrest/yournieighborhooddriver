@@ -2,6 +2,10 @@
 
 Web Programming with Python and JavaScript
 
+## [Your Neighborhood Driver](http://www.yourneighborhooddriver.com)
+
+This project is about a Philadelphia-based rideshare brand, operating under the Uber platform. It is a brochure intended to drive passive income and regular rideshare customers.
+
 ## The Pages
 1. index.html: The home page.
 1. about.html: Page containing cards with images and information about the **Your Neighborhood Driver business**.
@@ -11,4 +15,4 @@ Web Programming with Python and JavaScript
 
 ## Notes
 
-The folders **ride**, **drive**, and **uzurv** each contain an **index.html** file. These folders allow clean urls for referral redirects.
+The folders **ride**, **drive**, and **uzurv** each contain an **index.html** file. These folders allow clean urls (e.g. /ride, /drive, and /uzurv) for referral redirects. _config.yml contains a Ruby gem that allows github Pages to redirect. Learn more [here](https://help.github.com/articles/redirects-on-github-pages/).

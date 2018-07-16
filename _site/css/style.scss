@@ -7,6 +7,7 @@ $TABLE_BORDER: 1px solid $COLOR;
 /* GLOBAL STYLES */
 html {
     height: 100%;
+    width: 100%;
 }
 body {
     background: $BACKGROUND;
@@ -60,8 +61,9 @@ body {
 .content {
     margin: 10px auto;
 }
+/* SOCIAL STYLES*/
 .social {
-    margin-top: 10px;
+    margin-top: 15px;
     >img {
         display: block;
         width: 250px;
@@ -73,11 +75,19 @@ body {
     a:link, a:hover, a:visited,a:active {
         text-decoration: none;
     }
-    .fab, .far {
-        font-size: 1.6rem;
-        padding: 15px;
-        color: $NAV_TEXT;
-        background-color: $NAV_BACKGROUND;
+    >p {
+        margin: 10px 0;
+        text-align: center;
+    }
+    >.links {
+            position: relative;
+            left: 25%;
+            .fab, .far {
+            font-size: 1.6rem;
+            padding: 15px;
+            color: $NAV_TEXT;
+            background-color: $NAV_BACKGROUND;
+        }
     }
 }
 /* FOOTER STYLES */
@@ -139,5 +149,10 @@ footer {
         display: block;
         width: 95%;
         margin: 0 auto 5px auto;
+    }
+    .social {
+        .links {
+            left: 30%;
+        }
     }
 }
